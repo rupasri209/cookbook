@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cookbook</title>
+    <style>
+      body {
+        background: #f2ebeb;
+        font-family: sans-serif;
+        padding-top: 50px;
+      }
+      a,p {
+        color: #5d5369;
+      }
+      h1,h2,h3,h4,h5,h6 {
+        font-family: serif;
+      }
+
+      .container {
+        max-width: 550px;
+        margin: auto;
+        background-color: #fff;
+        -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+        box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px 5px 0px 0px;
+        background: #403d3d;
+      }
+      .header a {
+        color: #ebdfe3;
+        text-decoration: none;
+      }
+      .recipe-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #fff;
+        border-top: 1px solid rgb(226, 226, 226);
+      }
+      .recipe-title {
+        display: flex;
+        font-size: 20px;
+      }
+      .recipe-title a {
+        text-decoration: none;
+        padding-left: 10px;
+      }
+      .delete-link {
+        text-decoration: none;
+        font-size: 25px;
+        color: #a83236;
+      }
+      .search-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      #link {
+        color: #a83236;
+        text-decoration: none;
+        font-size: 45px;
+      }
+      input[type="text"],
+      input[type="password"],
+      textarea {
+        border: 1px solid #a83236;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      label {
+        padding-top: 10px;
+        display: block;
+        margin-top: 5px;
+      }
+      .button {
+        border: 1px solid #a83236;
+        background-color: #fafafa;
+        padding: 10px;
+        color: #a83236;
+        border-radius: 7px;
+        text-decoration: none;
+        margin-left: 5px;
+      }
+      .card {
+        padding: 25px;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="container">{% block content %} {% endblock content %}</div>
+  </body>
+</html>
